@@ -1,7 +1,10 @@
 neo4j:
-  build: .
+  image: neo4j:latest
   ports:
     - "7474:7474"
     - "7687:7687"
   environment:
     NEO4J_AUTH: "none"
+  volumes:
+    - ./instacart_2017_05_01:/var/lib/neo4j/import
+    - ./db:/var/lib/neo4j/data
