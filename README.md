@@ -1,7 +1,10 @@
 # 400 trash bags of grocery receipts + Neo4j
 
-Slides, help loading data, and sample queries from the [meetup
+Help loading data and sample queries from the [meetup
 talk](https://www.meetup.com/windy-city-graphdb/events/240348871/).
+
+Check out [the slides
+here](https://docs.google.com/presentation/d/1C3iLwoMXUAwFLNbCOs8Hf8jE2pHATKalL7hGU72Mqhw/edit?usp=sharing).
 
 ## Running neo4j with the Instacart data
 
