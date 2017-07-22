@@ -39,5 +39,4 @@ docker-compose up
 ```
 
 Now check out the `cypher` directory of this project for queries to
-import the data, then copies of all the queries I use in the
-presentation.
+import the data and all the queries I use in the presentation.
