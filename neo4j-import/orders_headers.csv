@@ -1,0 +1,1 @@
+id:ID(Order),user_id,evalSet,orderNumber:int,orderDow:int,orderHourOfDay:int,daysSincePriorOrder:float

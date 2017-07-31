@@ -1,0 +1,1 @@
+:START_ID(OrderedItem),order_id:IGNORE,:END_ID(Product),add_to_cart_order:IGNORE,reordered:IGNORE
