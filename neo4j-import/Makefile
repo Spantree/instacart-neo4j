@@ -55,6 +55,6 @@ instacart_2017_05_01/products.scrubbed.csv: instacart_2017_05_01/products.csv
 	sed 's/\""/\"/g' $< > $@
 
 clean:
-	test -e instacart_2017_05_1 && rm -r instacart_2017_05_01 || true &&\
-	test -e $(NEO4J_DATA_DIR)/instacart.db && rm -r $(NEO4J_DATA_DIR)/instacart.db || true &\
-  test -e $(NEO4J_DATA_DIR)/instacart.full.db && rm -r $(NEO4J_DATA_DIR)/instacart.full.db || true
+	if [ -e instacart_2017_05_01/ ]; then rm -rf instacart_2017_05_01/; fi && \
+	if [ -e $(NEO4J_DATA_DIR)/instacart.db ]; then rm -r $(NEO4J_DATA_DIR)/instacart.db; fi && \
+  if [ -e $(NEO4J_DATA_DIR)/instacart.full.db ]; then rm -r $(NEO4J_DATA_DIR)/instacart.full.db; fi
