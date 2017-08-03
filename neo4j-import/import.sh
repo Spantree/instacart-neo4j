@@ -1,0 +1,14 @@
+neo4j-import --into instacart.db --id-type string \
+  --skip-duplicate-nodes true \
+  --bad-tolerance true \
+  --nodes:User users_headers.csv,orders.csv \
+  --nodes:Department departments.csv \
+  --nodes:Aisle aisles.csv \
+  --nodes:Product products_headers.csv,products.csv \
+  --nodes:Order orders_headers.csv,orders.csv \
+  --nodes:OrderedItem order_products_headers.csv,order_products__prior_id.csv,order_products__train_id.csv \
+  --relationships:ON products_aisles_headers.csv,products.csv \
+  --relationships:IN products_departments_headers.csv,products.csv \
+  --relationships:ORDERED users_orders_headers.csv,orders.csv \
+  --relationships:IN_ORDER order_products_order_headers.csv,order_products__prior_id.csv,order_products__train_id.csv \
+  --relationships:ITEM order_products_products_headers.csv,order_products__prior_id.csv,order_products__train_id.csv
