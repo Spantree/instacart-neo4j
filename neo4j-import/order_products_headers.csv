@@ -1,1 +1,1 @@
-id:ID(OrderedItem),order_id:IGNORE,product_id:IGNORE,addToCartOrder:int,reordered
+:END_ID(Order),:START_ID(Product),addToCartOrder:int,reordered
